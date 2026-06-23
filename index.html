@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fridge Recipe Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Fridge Recipe Finder</h1>
+    <p>Type what you have in your fridge and get recipe ideas.</p>
+  </header>
+
+  <nav class="nav">
+    <button class="nav-btn active" onclick="showPage('home')">Home</button>
+    <button class="nav-btn" onclick="showPage('nutrition')">Nutrition</button>
+  </nav>
+
+  <main class="container">
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+      <div class="card">
+        <h2>Find a Recipe</h2>
+        <p>Enter ingredients separated by commas. You do not need to use every item.</p>
+
+        <textarea id="ingredientsInput" placeholder="e.g. eggs, cheese, bread, milk, butter"></textarea>
+
+        <button id="findRecipeBtn">Search Pinterest</button>
+
+        <div id="result" class="result">
+          <p>Your recipe suggestions will appear here.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Popular Ingredients</h2>
+        <ul class="ingredient-list">
+          <li>Eggs</li>
+          <li>Cheese</li>
+          <li>Bread</li>
+          <li>Milk</li>
+          <li>Rice</li>
+          <li>Pasta</li>
+          <li>Chicken</li>
+          <li>Tomatoes</li>
+          <li>Onions</li>
+          <li>Butter</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NUTRITION PAGE -->
+    <section id="nutrition" class="page">
+      <div class="card">
+        <h2>Nutrition Tips</h2>
+        <p>This page gives simple nutrition guidance based on the foods you have.</p>
+
+        <div class="nutrition-grid">
+          <div class="nutrition-box">
+            <h3>Protein</h3>
+            <p>Eggs, chicken, beans, yogurt, cheese, tuna</p>
+          </div>
+
+          <div class="nutrition-box">
+            <h3>Carbs</h3>
+            <p>Bread, rice, pasta, potatoes, oats</p>
+          </div>
+
+          <div class="nutrition-box">
+            <h3>Healthy Fats</h3>
+            <p>Avocado, olive oil, peanut butter, nuts</p>
+          </div>
+
+          <div class="nutrition-box">
+            <h3>Fruits & Veggies</h3>
+            <p>Spinach, carrots, tomatoes, onions, apples, bananas</p>
+          </div>
+        </div>
+
+        <h3>Simple Meal Balance</h3>
+        <p>A good meal usually has:</p>
+        <ul>
+          <li>1 protein</li>
+          <li>1 carb</li>
+          <li>1 fruit or vegetable</li>
+          <li>optional healthy fat</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
