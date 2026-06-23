@@ -1,17 +1,12 @@
-function showPage(pageId) {
+function showPage(pageId, clickedButton) {
   const pages = document.querySelectorAll(".page");
-  const buttons = document.querySelectorAll(".nav-btn");
+  const buttons = document.querySelectorAll(".tab-btn");
 
   pages.forEach(page => page.classList.remove("active"));
   buttons.forEach(btn => btn.classList.remove("active"));
 
   document.getElementById(pageId).classList.add("active");
-
-  if (pageId === "home") {
-    document.querySelectorAll(".nav-btn")[0].classList.add("active");
-  } else if (pageId === "nutrition") {
-    document.querySelectorAll(".nav-btn")[1].classList.add("active");
-  }
+  clickedButton.classList.add("active");
 }
 
 const btn = document.getElementById("findRecipeBtn");
@@ -33,9 +28,9 @@ btn.addEventListener("click", () => {
   const pinterestUrl = `https://www.pinterest.com/search/pins/?q=${encodeURIComponent(searchQuery)}`;
 
   result.innerHTML = `
-    <h2>Searching Pinterest for:</h2>
-    <p><strong>${searchQuery}</strong></p>
-    <p>Opening Pinterest recipes in a new tab...</p>
+    <h3>Recipe search ready</h3>
+    <p><strong>Searching for:</strong> ${searchQuery}</p>
+    <p>Opening Pinterest in a new tab...</p>
   `;
 
   window.open(pinterestUrl, "_blank");
