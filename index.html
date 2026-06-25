@@ -13,7 +13,7 @@
         <div class="logo">🍳</div>
         <div>
           <h1>Fridge Buddy</h1>
-          <p>Make something delicious from what you already have</p>
+          <p>Turn what you have into meal ideas</p>
         </div>
       </div>
     </header>
@@ -21,44 +21,42 @@
     <nav class="tabbar">
       <button class="tab-btn active" onclick="showPage('home', this)">Home</button>
       <button class="tab-btn" onclick="showPage('nutrition', this)">Nutrition Facts</button>
-      <button class="tab-btn" onclick="showPage('about', this)">Tips</button>
+      <button class="tab-btn" onclick="showPage('tips', this)">Tips</button>
     </nav>
 
     <main class="content">
-      <!-- HOME PAGE -->
       <section id="home" class="page active">
         <div class="card hero">
           <h2>What’s in your fridge today?</h2>
-          <p>Type any ingredients you have. Use as many or as few as you want — we’ll find recipes that match.</p>
+          <p>Type ingredients separated by commas. You do not need to use everything.</p>
 
-          <textarea id="ingredientsInput" placeholder="eggs, cheese, bread, spinach, chicken, rice"></textarea>
+          <textarea id="ingredientsInput" placeholder="eggs, cheese, bread, milk, spinach"></textarea>
 
           <button id="findRecipeBtn" class="primary-btn">Find Recipe Ideas</button>
 
           <div id="encouragement" class="encouragement">
-            <p>You’ve got this — even simple ingredients can make a great meal ✨</p>
+            <p>You’ve got this — even simple ingredients can make something great ✨</p>
           </div>
         </div>
 
         <div class="card">
           <div class="section-title">
             <h3>Recipe Matches</h3>
-            <p>Choose to stay in the app or open the full recipe.</p>
+            <p>Recipes will appear here after you search.</p>
           </div>
           <div id="results" class="recipe-grid">
             <div class="empty-state">
               <h4>No recipe yet</h4>
-              <p>Enter ingredients above and hit the button to see ideas.</p>
+              <p>Enter ingredients above and click the button.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- NUTRITION PAGE -->
       <section id="nutrition" class="page">
         <div class="card">
           <h2>Nutrition Facts</h2>
-          <p>Here’s a simple guide to help you build a balanced meal.</p>
+          <p>A simple guide to building balanced meals.</p>
 
           <div class="nutrition-grid">
             <div class="nutrient-card blue">
@@ -75,7 +73,7 @@
             </div>
 
             <div class="nutrient-card purple">
-              <h3>Carbohydrates</h3>
+              <h3>Carbs</h3>
               <p>Give you energy for the day.</p>
               <ul>
                 <li>Bread</li>
@@ -114,25 +112,23 @@
 
           <div class="tip-banner">
             <h3>Easy meal formula</h3>
-            <p>Try to build a meal with: <strong>protein + carb + fruit/veggie + optional fat</strong>.</p>
+            <p>Try: <strong>protein + carb + veggie + optional fat</strong>.</p>
           </div>
         </div>
       </section>
 
-      <!-- TIPS PAGE -->
-      <section id="about" class="page">
+      <section id="tips" class="page">
         <div class="card">
           <h2>Helpful Tips</h2>
           <ul class="tips-list">
-            <li>Don’t worry if you’re missing ingredients — recipes can be flexible.</li>
-            <li>Start with simple foods like eggs, rice, pasta, bread, or cheese.</li>
-            <li>Use the open link if you want full directions from the source.</li>
-            <li>Little wins count. Cooking something from your fridge is awesome.</li>
-            <li>Try mixing one protein, one carb, and one veggie for a balanced meal.</li>
+            <li>Don’t worry if you’re missing ingredients — recipes are flexible.</li>
+            <li>Try simple foods like eggs, rice, pasta, bread, or cheese.</li>
+            <li>The app shows a preview, then you can open the full recipe link.</li>
+            <li>Small wins count. Making food from what you have is a big deal.</li>
           </ul>
 
           <div class="encouragement big">
-            <p>Small ingredients. Big possibilities. You are doing great 💙💜</p>
+            <p>Small ingredients. Big possibilities. You’re doing great 💙💜</p>
           </div>
         </div>
       </section>
