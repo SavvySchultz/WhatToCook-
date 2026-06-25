@@ -13,7 +13,7 @@
         <div class="logo">🧊</div>
         <div>
           <h1>Fridge Buddy</h1>
-          <p>Type what you have and get recipe ideas</p>
+          <p>Turn what you already have into meal ideas</p>
         </div>
       </div>
     </header>
@@ -25,58 +25,56 @@
     </nav>
 
     <main class="content">
-      <!-- HOME -->
       <section id="home" class="page active">
         <div class="card hero">
-          <h2>What’s in your fridge today?</h2>
-          <p>Enter ingredients separated by commas. You do not need to use everything.</p>
+          <h2>What’s in your fridge?</h2>
+          <p>Type the ingredients you have. The app will only suggest recipes made from those ingredients.</p>
 
           <textarea id="ingredientsInput" placeholder="eggs, cheese, bread, milk, spinach"></textarea>
 
-          <button id="findRecipeBtn" class="primary-btn">Find Recipe Ideas</button>
+          <button id="findRecipeBtn" class="primary-btn">Find Ideas</button>
 
           <div id="encouragement" class="encouragement">
-            <p>You’ve got this — even simple ingredients can make something delicious ✨</p>
+            <p>You’ve got this — even a few ingredients can become a meal ✨</p>
           </div>
         </div>
 
         <div class="card">
           <div class="section-title">
-            <h3>Recipe Results</h3>
-            <p>Recipes from TheMealDB will appear below.</p>
+            <h3>Recipe Ideas</h3>
+            <p>These recipes only use the ingredients you provided.</p>
           </div>
 
           <div id="results" class="recipe-grid">
             <div class="empty-state">
               <h4>No recipe yet</h4>
-              <p>Type ingredients above and click the button to search.</p>
+              <p>Type ingredients above and click the button.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- NUTRITION -->
       <section id="nutrition" class="page">
         <div class="card">
           <h2>Nutrition Facts</h2>
-          <p>Use this as a simple guide for balanced meals.</p>
+          <p>Build a balanced meal using simple food groups.</p>
 
           <div class="nutrition-grid">
             <div class="nutrient-card blue">
               <h3>Protein</h3>
-              <p>Helps keep you full and supports your body.</p>
+              <p>Helps keep you full and strong.</p>
               <ul>
                 <li>Eggs</li>
                 <li>Chicken</li>
                 <li>Beans</li>
+                <li>Cheese</li>
                 <li>Yogurt</li>
-                <li>Tuna</li>
               </ul>
             </div>
 
             <div class="nutrient-card purple">
               <h3>Carbs</h3>
-              <p>Give you energy and make meals more filling.</p>
+              <p>Give you energy.</p>
               <ul>
                 <li>Bread</li>
                 <li>Rice</li>
@@ -88,50 +86,48 @@
 
             <div class="nutrient-card blue">
               <h3>Healthy Fats</h3>
-              <p>Help support the brain and make meals satisfying.</p>
+              <p>Support your brain and keep meals satisfying.</p>
               <ul>
-                <li>Avocado</li>
+                <li>Butter</li>
                 <li>Olive oil</li>
+                <li>Avocado</li>
                 <li>Nuts</li>
                 <li>Peanut butter</li>
-                <li>Seeds</li>
               </ul>
             </div>
 
             <div class="nutrient-card purple">
               <h3>Fruits & Veggies</h3>
-              <p>Add color, fiber, vitamins, and crunch.</p>
+              <p>Add color, fiber, and vitamins.</p>
               <ul>
                 <li>Spinach</li>
                 <li>Tomatoes</li>
-                <li>Carrots</li>
                 <li>Onions</li>
+                <li>Carrots</li>
                 <li>Apples</li>
-                <li>Bananas</li>
               </ul>
             </div>
           </div>
 
           <div class="tip-banner">
-            <h3>Easy meal idea</h3>
-            <p>Try to combine <strong>1 protein + 1 carb + 1 veggie</strong> for a balanced meal.</p>
+            <h3>Meal formula</h3>
+            <p>Try combining <strong>1 protein + 1 carb + 1 veggie</strong>.</p>
           </div>
         </div>
       </section>
 
-      <!-- TIPS -->
       <section id="tips" class="page">
         <div class="card">
           <h2>Helpful Tips</h2>
           <ul class="tips-list">
-            <li>Don’t worry if your ingredients don’t match perfectly.</li>
-            <li>Recipes often work with substitutes.</li>
-            <li>Try simple ingredients first: eggs, bread, rice, pasta, cheese.</li>
-            <li>Every meal you make is a win.</li>
+            <li>You do not need a perfect recipe to make a good meal.</li>
+            <li>Using what you already have saves time and money.</li>
+            <li>Simple meals are still real meals.</li>
+            <li>If you’re stuck, start with eggs, bread, rice, or pasta.</li>
           </ul>
 
           <div class="encouragement big">
-            <p>Small ingredients. Big possibilities. You’re doing great 💙💜</p>
+            <p>Even if the fridge looks empty, you can still make something good 💙</p>
           </div>
         </div>
       </section>
